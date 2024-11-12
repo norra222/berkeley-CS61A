@@ -1,6 +1,9 @@
 #lang racket
 
 ; Exercise 1.7
+; Define a procedure that takes in one argument and returns the sqaure root
+; using Newton's method of approximate calculations, and ending when the change
+; between iterations is a very small of a fraction of the guess.
 
 (define (sqrt-iter guess prev x)
   (if (good-enough? guess prev)

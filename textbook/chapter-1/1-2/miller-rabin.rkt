@@ -4,8 +4,8 @@
 ; Exercise 1.28
 ; Procedure for performing the Miller-Rabin prime test, which
 ; starts with an alternative form of Fermat's Little Theorem,
-; and also performs an extra check in expmod. This procedure is
-; not fooled by the Carmichael numbers.
+; and also performs an extra check in expmod.
+; This procedure is not fooled by the Carmichael numbers.
 ; For more information on the theory see textbook
 
 (define (expmod base exp n)

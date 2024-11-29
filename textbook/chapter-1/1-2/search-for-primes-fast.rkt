@@ -2,7 +2,7 @@
 (require "smallest-divisor.rkt")
 
 ; Exercise 1.24
-; Apadtation of "search-for-primes.rkt" but using prime-fast
+; Adaptation of "search-for-primes.rkt" but using prime-fast
 ; from "smallest-divisor.rkt" which uses the Fermat method
 
 (define (timed-prime-test n)

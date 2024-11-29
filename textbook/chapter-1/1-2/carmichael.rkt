@@ -3,7 +3,8 @@
 
 ; Exercise 1.27
 ; A procedure that takes an integer n and tests whether
-; a^n is congruent to a modulo n for every a < n, use this
+; a^n is congruent to a modulo n for every a < n (i.e. it passes
+; the fermat test for all valid values of a), use this
 ; to show that the Carmichael numbers can fool the Fermat test
 
 (define (expmod base exp m)

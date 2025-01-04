@@ -14,7 +14,7 @@ Chapter 3 - Formulating Abstractions with Higher-Order Procedures
 
 ## Projects
 
-### Project 1 - Blackjack
+### Project 1 - Twenty One
 A scheme implementation of the casino game blackjack, where the aim is to get 21 without going over (or "bust"). This project includes 5 files for the full implementation:
 - **twenty-one**: play a single game of blackjack with a given strategy for the user
 - **best-total**: required by twenty-one, provides a function for evaluating a hand and returning the best possible value of that hand, taking into account aces.

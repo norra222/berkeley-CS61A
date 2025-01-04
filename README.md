@@ -11,3 +11,16 @@ This course has some custom scheme structures, notably words and sentences.
 ### Texbook Exercises
 Chapter 1 - The Elements of Programming
 Chapter 3 - Formulating Abstractions with Higher-Order Procedures
+
+## Projects
+
+### Project 1 - Blackjack
+A scheme implementation of the casino game blackjack, where the aim is to get 21 without going over (or "bust"). This project includes 5 files for the full implementation:
+- **twenty-one**: play a single game of blackjack with a given strategy for the user
+- **best-total**: required by twenty-one, provides a function for evaluating a hand and returning the best possible value of that hand, taking into account aces.
+- **strategies**: provides several different strategies which can be used by the player
+- **play**: plays multiple games of blackjack using different strategies and outputs the number of wins minus losses for each one
+- **joker**: in the final part, the rules were modified to include 2 joker cards which can have any value from 1 to 11. This file contains an implementation of blackjack using this new rule.
+
+(TODO: Link to docs)
+

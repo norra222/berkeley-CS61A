@@ -1,5 +1,5 @@
 #lang racket
-(require berkeley racket/trace "best-total.rkt")
+(require berkeley "best-total.rkt")
 (provide twenty-one)
 
 ; The procedure twenty-one invokes a game of blackjack using an inputted
@@ -7,7 +7,6 @@
 ; to whether the customer won, tied or lost respectively.
 
 (define (twenty-one strategy)
-;  (trace strategy)
   (define (play-dealer customer-hand dealer-hand-so-far rest-of-deck)
     (cond ((> (best-total dealer-hand-so-far) 21) 1)
 	  ((< (best-total dealer-hand-so-far) 17)

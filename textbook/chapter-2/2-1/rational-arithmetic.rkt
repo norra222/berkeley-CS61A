@@ -26,15 +26,19 @@
   (make-rat (* (numer x) (denom y))
             (* (numer y) (denom x))))
 
+; Defining some common fractions
+
 (define one-half (make-rat 1 2))
-(print-rat one-half)
+(print-rat one-half) ; 1/2
 
 (define one-third (make-rat 1 3))
-(print-rat one-third)
+(print-rat one-third) ; 1/3
 
-(print-rat (mult-rat one-half one-third))
+(define one-sixth (mult-rat one-half one-third))
+(print-rat one-sixth) ; 1/6
 
-(print-rat (add-rat one-third one-third))
+(define two-thirds (add-rat one-third one-third))
+(print-rat two-thirds) ; 2/3
 
 (define negative-half (make-rat -1 -2))
 (print-rat negative-half)

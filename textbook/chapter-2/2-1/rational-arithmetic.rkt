@@ -26,6 +26,10 @@
   (make-rat (* (numer x) (denom y))
             (* (numer y) (denom x))))
 
+(define (equal-rat? x y)
+  (= (* (numer x) (denom y))
+     (* (numer y) (denom x))))
+
 ; Defining some common fractions
 
 (define one-half (make-rat 1 2))
@@ -41,4 +45,10 @@
 (print-rat two-thirds) ; 2/3
 
 (define negative-half (make-rat -1 -2))
-(print-rat negative-half)
+(print-rat negative-half) ; -1/2
+
+; Check 2/6 is equal to 1/3
+(define two (make-rat 2 1))
+(define two-sixths (mult-rat one-sixth two))
+
+(print (equal-rat? two-sixths one-third))
